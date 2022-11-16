@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food for you</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Fasthand&family=Fredoka:wght@300;400;500&family=Open+Sans:ital,wght@0,400;0,500;0,800;1,600&family=Ubuntu:ital,wght@0,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../images/pngwing.com.png" class="png-logo" alt="logo" />
+      </div>
+      <div class="nav-bar">
+        <a href="../index.html" class="menu"> Home </a>
+        <a href="../pages/categories.html" class="menu">Categories</a>
+        <a href="../pages/contact.html" class="menu">Contact</a>
+        <a href="../pages/about.html" class="menu">About</a>
+      </div>
+    </header>
+    <main>
+      <div class="container-general">
+        <div class="text-center">
+          <h1>Contact Us</h1>
+          <p>Fill up the form below to send us a message.</p>
+        </div>
+        <div class="container-secundar">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="26a11090-f373-4562-acfd-ff2aaba9e856"
+              class="inputname"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="New Submission from Web3Forms"
+              class="inputname"
+            />
+            <input
+              type="checkbox"
+              name="botcheck"
+              style="display: none"
+              class="inputname"
+            />
+
+            <div class="name">
+              <label for="name" class="label">Full Name</label>
+              <input
+                type="text"
+                name="name"
+                class="textarea"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+            <div class="email">
+              <label class="label" for="email">Email Address</label>
+              <input
+                type="email"
+                name="email"
+                class="textarea"
+                placeholder="you@gmail.com"
+                required
+              />
+            </div>
+
+            <div class="message">
+              <div class="message-text">
+                <label for="message" class="label">Your Message</label>
+
+                <textarea
+                  rows="5"
+                  name="message"
+                  class="textarea"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="button-section">
+              <button class="button" type="submit">Send Message</button>
+            </div>
+            <p id="result"></p>
+          </form>
+        </div>
+    </main>
+    <footer>
+      <a href="/pages/home.html" class="home-footer"> Home </a>
+      <a href="/pages/contact.html" class="contact-footer"> Contact</a>
+      <a href="/pages/about.html" class="about-footer"> About </a>
+    </footer>
+  </body>
+</html>
